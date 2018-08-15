@@ -1,0 +1,9 @@
+<launch>
+
+	<node pkg="ros_esccontrol" name="ros_esccontrol" type="esccontroller"/>
+	
+	<node pkg="navx_micro" name="navx_micro" type="navx_micro"/>
+
+	<node name="uscturtle_motion" pkg="uscturtle_motion" type="uscturtle_motion" />
+
+</launch>

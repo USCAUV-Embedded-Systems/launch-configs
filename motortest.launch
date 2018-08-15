@@ -1,0 +1,9 @@
+<launch>
+
+	<machine name="pi" address="192.168.0.130" default="true" user="pi" password="uscturtle"/>
+
+	<node machine="pi" pkg="ros_esccontrol" name="ros_esccontrol" type="esccontroller"/>
+	
+	<node machine="pi" name="uscturtle_motion" pkg="uscturtle_motion" type="uscturtle_motor_test" />
+
+</launch>
