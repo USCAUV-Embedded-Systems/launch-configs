@@ -6,4 +6,6 @@
 	
 	<node machine="pi" name="uscturtle_motion" pkg="uscturtle_motion" type="uscturtle_motor_test" />
 
+	<node machine="pi" name="bag_record" pkg="rosbag" type="record"  args="-a"/>
+
 </launch>
