@@ -1,9 +1,11 @@
 <launch>
 
+	<machine name="local" address="192.168.0.100" default="false" user="uscauv" env-loader="~/auv_ws/devel/setup.bash"/>
+
 	<machine name="jetson" address="192.168.0.50" default="true" user="nvidia" password="nvidia" env-loader="/home/nvidia/auv_ws/src/launch-configs/env-loader.sh"/>
 
 	<node machine="jetson" pkg="ros_esccontrol" name="ros_esccontrol" type="esccontroller"/>
 	
-	<node machine="jetson" name="uscturtle_motor_test" pkg="motion_controller" type="motor_test" />
+	<node machine="local" name="uscturtle_teleop" pkg="uscturtle_teleop" type="uscturtle_teleop" />
 
 </launch>
