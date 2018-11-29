@@ -6,6 +6,8 @@
 
 	<node machine="jetson" pkg="ros_esccontrol" name="ros_esccontrol" type="esccontroller"/>
 
+	<node machine="jetson" pkg="motion_controller" name="motion_controller" type="motion_controller"/>
+
 	<node machine="jetson" pkg="ros_ngimu" name="ros_ngimu" type="ros_ngimu"/>
 
 	<!-- Start rosbag to record sensor values -->
