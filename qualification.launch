@@ -10,6 +10,8 @@
 
 	<node machine="jetson" pkg="ros_ngimu" name="ros_ngimu" type="ros_ngimu"/>
 
+	<node machine="jetson" pkg="uscauv-cv" name="forward_test" type="forward_test.py"/>
+
 	<!-- Start rosbag to record sensor values -->
 	<!--node pkg="rosbag" type="record" name="rosbag_record_sensors"
 		  args="record -o ~/auv_ws/sensordata.bag /ngimu/euler /ngimu/quaternion /ngimu/earthAccel /rosout"/-->
